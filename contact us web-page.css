@@ -1,0 +1,148 @@
+
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.heady {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    text-decoration: overline;
+    color: #007bff; /* Gold color on hover */
+}
+
+/* Main Body Content Styling */
+.body {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.body h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #007bff; /* Blue color for heading */
+}
+
+.body h1 span {
+    color: #28a745; /* Green color for 'Development' */
+}
+
+.body .shop {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Social Media Icons */
+.fa-brands {
+    font-size: 2.5rem;
+    margin: 0 1rem;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.fa-brands:hover {
+    color: #007bff; /* Blue on hover */
+}
+
+/* Button Styling */
+.cn {
+    background-color: #007bff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.cn:hover {
+    background-color: #0056b3;
+}
+
+.cn .join {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.styled-joi-image {
+    /* Sizing: Keep it from being too big and maintain aspect ratio */
+    width: 300px; /* Set a fixed width */
+    height: auto; /* Height scales proportionally to maintain aspect ratio */
+    max-width: 100%; /* Ensures it's responsive and doesn't exceed parent container width */
+    display: block; /* Helps with centering/layout */
+    margin: 20px auto; /* Centers the image if it's in a block container */
+
+    /* Effects: Add lots of visual effects */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 140, 186, 0.5); /* Multiple shadows for depth and a subtle glow */
+    filter: sepia(50%) brightness(110%) contrast(110%); /* Apply multiple filters */
+    transition: all 0.5s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect: Changes when a user hovers over the image */
+.styled-joi-image:hover {
+    filter: sepia(0%) brightness(100%) contrast(100%) blur(1px); /* Removes sepia and blur slightly on hover */
+    transform: scale(1.05) rotate(2deg); /* Slightly enlarges and rotates the image */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 140, 186, 0.8); /* Stronger shadow/glow on hover */
+    cursor: pointer; /* Changes cursor to a hand pointer */
+    width: 400px; /* Set a fixed width */
+}
+
+@media (min-width:  320px) and (max-width: 480px) {
+    .heady {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 20px;
+    }
+    .nav-bar a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 11px;
+        font-size: 15px;
+        transition: color 0.3s ease;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+}
